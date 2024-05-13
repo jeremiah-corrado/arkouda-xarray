@@ -1,0 +1,26 @@
+[project]
+name = "arkouda-xarray"
+version = "0.0.1"
+description = "Module for using Arkouda as a chunked array type in Xarray"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy >= 1.17",
+    "xarray >= 2024.02.0",
+    "arkouda >= 2024.04.19",
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "arkouda_xarray",
+]
+
+[project.entry-points."xarray.chunkmanagers"]
+cubed = "arkouda_xarray.arkoudamanager:ArkoudaManager"
+
+[build-system]
+requires = ["setuptools >= 64", "setuptools_scm >= 7.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+fallback_version = "999"
