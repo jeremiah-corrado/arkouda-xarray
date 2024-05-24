@@ -47,6 +47,12 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
             else:
                 chunk_sizes = tuple(chunks)
 
+        # # create array to store data
+        # print("data dtype: ", data.dtype)
+        # print("shape: ", data.shape)
+        # print("first elem: ", data[0])
+        # print("type of first elem: ", type(data[0]))
+
         # create array to store data
         arr = aa.zeros(data.shape, dtype=data.dtype)
 

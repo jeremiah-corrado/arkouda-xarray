@@ -18,7 +18,7 @@ Clone this repository, `cd` into arkouda_xarray and run:
 pip install .
 ```
 
-With this library installed, XArray's [entry point system](https://docs.xarray.dev/en/stable/internals/chunked-arrays.html#registering-a-new-chunkmanagerentrypoint-subclass) should automatically recognize that the Arkouda ChunkManager is available. Importing `arkouda-xarray` in your code is not necessary.
+With this library installed, XArray's [entry point system](https://docs.xarray.dev/en/stable/internals/chunked-arrays.html#registering-a-new-chunkmanagerentrypoint-subclass) should automatically recognize that the Arkouda ChunkManager is available. Importing `arkouda_xarray` in your code is not necessary.
 
 ## Usage
 
