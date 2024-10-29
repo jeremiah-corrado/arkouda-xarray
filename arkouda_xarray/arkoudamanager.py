@@ -87,9 +87,11 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
         dtype: _DType_co | None = None,
         keepdims: bool = False,
     ) -> ArkoudaArray | Any:
-        from arkouda.array_api import asarray
+        # from arkouda.array_api import asarray
 
-        return asarray(func(arr))
+        # return asarray(func(arr))
+
+        raise NotImplementedError("Reduction not implemented")
 
     def scan(
         self,
@@ -101,9 +103,11 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
         dtype: _DType_co | None = None,
         **kwargs: Any,
     ) -> ArkoudaArray | Any:
-        from arkouda.array_api import asarray
+        # from arkouda.array_api import asarray
 
-        return asarray(func(arr))
+        # return asarray(func(arr))
+
+        raise NotImplementedError("Scan not implemented")
 
     def apply_gufunc(
         self,
@@ -118,9 +122,11 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
         vectorize: bool | None = None,
         **kwargs: Any,
     ) -> Any:
-        from arkouda.array_api import asarray
+        # from arkouda.array_api import asarray
 
-        return asarray(func(arr))
+        # return asarray(func(arr))
+
+        raise NotImplementedError("Apply gufunc not implemented")
 
     def map_blocks(
         self,
@@ -132,9 +138,11 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
         new_axis: int | Sequence[int] | None = None,
         **kwargs: Any,
     ) -> Any:
-        from arkouda.array_api import asarray
+        # from arkouda.array_api import asarray
 
-        return asarray(func(arr))
+        # return asarray(func(arr))
+
+        raise NotImplementedError("Map blocks not implemented")
 
     def blockwise(
         self,
@@ -146,9 +154,11 @@ class ArkoudaManager(ChunkManagerEntrypoint["ArkoudaArray"]):  # type: ignore[ty
         align_arrays: bool = True,
         **kwargs: Any,
     ) -> ArkoudaArray | Any:
-        from arkouda.array_api import asarray
+        # from arkouda.array_api import asarray
 
-        return asarray(func(arr))
+        # return asarray(func(arr))
+
+        raise NotImplementedError("Blockwise not implemented")
 
     def unify_chunks(
         self,
